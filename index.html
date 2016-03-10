@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>3D Content on Web</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        
+        <!--font awesome-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
+        <!-- bootstrap -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+                <section>
+                    <h2>3D Web powered by..</h2>
+                    <img src="img/node-npm_horizontal.png" width="50%">
+                </section>
+                <section>
+                    <img src="img/vadertacos.jpg" width="25%">
+                    <p>Jaime Rosales</p>
+                    <p>DevTech Engineer at Autodesk </p>
+                    <i class="fa fa-twitter fa-fw"></i> @AfroJme
+                </section>
+                <section>
+                    <img src="img/flat-earth.jpg" width="600" height="600">
+                </section>
+                <section>
+                    <h2>Sorry B.O.B</h2>
+                    <img src="img/bobflatearth.jpg" width="50%">
+                </section>
+                <section>
+                    <img src="img/keanu%20meme%203d.png" width="600" height="600">
+                </section>
+                <section>
+                    <h2>First apperance of 3D on the Web</h2>
+                    <iframe width="480" height="360" src="https://www.youtube-nocookie.com/embed/-5x5OXfe9KY?autoplay=1&rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                </section>
+
+                <section>
+                    <iframe data-src="https://c1.goote.ch/a83474f3d9824897a464018edff4dd1d.scene/" height="600px" width="80%"></iframe>
+                </section>
+
+                <section>
+                    <p class="fragment">Photoshop/Illustrator for visual designers</p>
+                    <p class="fragment">AutoCAD for interior designers</p>
+                    <p class="fragment">Rhino/Solidworks/Fusion for industrial designer</p>
+                    <p class="fragment">Revit for architects</p>
+                </section>
+                
+                <section>
+                    <h2>Traditionally</h2>
+                    <p class="fragment">The designer makes up a design</p>
+                    <p class="fragment">they send it over to their client</p>
+                    <p class="fragment">client needs to download a software to view the file</p>
+                </section>
+                
+                <section>
+                    <h2>Outputs are proprietary formats</h2>
+                    <img src="img/file-formats.png" >
+                    <p class="fragment">Universal formats out there</p>
+                </section>
+
+                <section>
+                    <h2>The problem?</h2>
+                    <ul>
+                        <li class="fragment">Extremely lossy</li>
+                        <li class="fragment">Often lose meta data like quantity, width, height</li>
+                        <li class="fragment">Rendered images and pdf are 3D into 2D</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Are you from the Past?</h2>
+                    <iframe src="//giphy.com/embed/L4AQvif7x9fS8" width="640" height="480"
+                            frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+                    <a href="http://giphy.com/gifs/angry-frustrated-L4AQvif7x9fS8"></a></p>
+                </section>
+
+                <section>
+                    <h2>WebGL</h2>
+                    <p class="fragment">JavaScript API that lets browsers render 3D</p>
+                    <p class="fragment">It's not a W3C standard...</p>
+                    <div class="fragment">
+                        <p>but every browser supports it</p>
+                        <img src="img/webgl-browser-support.png">
+                    </div>
+                    <p class="fragment">It's a difficult technology to master</p>
+
+                </section>
+                <section>
+                    <img src="img/300.jpg">
+                </section>
+                
+                <section>
+                    <h2>Autodesk came out with a 3D/2D viewer...</h2>
+                    <div class="row">
+                        <div class="col-xs-6 fragment">
+                            <h1><i class="fa fa-cloud-upload"></i></h1>
+                            <p>Upload your CAD file</p>
+                            <p>REST API</p>
+                        </div>
+                        <div class="col-xs-6 fragment">
+                            <h1><i class="fa fa-desktop"></i></h1>
+                            <p>View on a browser</p>
+                            <p>JavaScript API</p>
+                        </div>
+                    </div>
+                    <p class="fragment">It's free!</p>
+                </section>
+                <section>
+                    <p>Would you rather see this on your e-commerce website..</p>
+                    <img src="img/ecommerce.png">
+                </section>
+                
+                <section>
+                    <p>or this?</p>
+                    <iframe src="http://lmv.rocks/viewer/?url=http://lmv.rocks/data/bike/0.svf" height="600px" width="90%"></iframe>
+                </section>
+
+                <section>
+                    <iframe data-src="http://examples.developer.autodesk.com/lmv-navigation/" height="500px" width="80%"></iframe>
+                </section>
+                <section>
+                    <h2>Supported File Formats</h2>
+                    <p>ipt, neu, stla, stl, xlsx, jt, jpg, skp, prt, dwf, xls, png, sldasm, step, dwg, zip, nwc, model, sim, stp, ste, f3d, pdf, iges, dwt, catproduct, csv, igs, sldprt, cgr, 3dm, sab, obj, pptx, cam360, jpeg, bmp, gbxml, exp, ppt, doc, wire, ige, rcp, txt, dae, x_b, 3ds, rtf, rvt, g, sim360, iam, asm, dlv3, x_t, pps, session, xas, xpr, docx, catpart, stlb, tiff, nwd, sat, fbx, smb, smt, ifc, dwfx, tif</p>
+                </section>
+                <section>
+                    <h2 class="fragment">Yes I'm sold, How do I get Started???</h2>
+                    <span><p class="fragment">developer.autodesk.com</p></span>
+                    <p class="fragment">Tweet me @AfroJme</p>
+                </section>
+
+                <section>
+                    <h2>The Stack</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <span class="fragment">
+                                <h4>Server-Side REST API</h4>
+                                <ul>
+                                    <li>Upload</li>
+                                    <li>Translation</li>
+                                    <li>Storage</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="fragment">
+                                <h4>Client-Side JavaScript API</h4>
+                                <ul>
+                                    <li>Viewing - THREE.js</li>
+                                    <li>Embed in Webpage</li>
+                                    <li>Various JavaScript APIs</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Server-Side</h1>
+                    <h2>REST API</h2>
+                    <img src="img/node-npm_horizontal.png" width="50%">
+                </section>
+
+                <section>
+                    <h2>Server-side Workflow</h2>
+                    <ul>
+                        <li>Register + create app</li>
+                        <li>Get access token</li>
+                        <li>Create bucket</li>
+                        <li>Upload file/object to bucket</li>
+                        <li>Request translation</li>
+                        <li>Access from client</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="img/npm-logo.png" width="50%">
+                    <div>
+                       <code data-trim class="hljs javascript">$ npm install view-and-data</code>
+                    </div>
+                </section>
+                <section>
+                    <p>Request your own API keys from our <a href="http://developer.autodesk.com">developer portal</a>.</p>
+                    <p> Replace the credentials placeholders with your own keys in `config-view-and-data.js` or use ENV variables:</p>
+                </section>
+                <section>
+                    <h2>Replace</h2>
+                    <div>
+                        <code data-trim class="hljs javascript">
+                                <p>ConsumerKey: process.env.CONSUMERKEY || 'replace with your consumer key>',</p>
+                               <p> ConsumerSecret: process.env.CONSUMERSECRET || 'replace with your consumer secret>'</p>
+                        </code>
+                    </div>
+                </section>
+                <section>
+                        <p>Set up the default bucket name defined by the `defaultBucketKey` variable.</p>
+                        <p>Copy the file `config-view-and-data.js` to your server config directory.</p>
+                </section>
+
+                <section>
+                    <h1>Client-Side</h1>
+                    <h2>JavaScript API</h2>
+                </section>
+
+                <section class="fragment">
+                    <h2>On your page</h2>
+                    <div class="fragment">
+                        <p>Reference the following JavaScript Libraries:</p>
+                        <pre><code data-trim class="hljs html">&lt;link rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css"&gt;
+                            &lt;script src="https://viewing.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"&gt;&lt;/script&gt;</code></pre>
+                    </div>
+                    <div class="fragment">
+                        <p>Create a div with id "viewer"</p>
+                        <pre><code data-trim class="hljs html">&lt;div id="viewer"&gt;&lt;/div&gt;</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Initialize with JavaScript</p>
+                <pre><code data-trim class="hljs javascript">
+                function initialize() {
+                var options = {
+                'document' : 'urn:(Your own URN)',
+                'env':'AutodeskProduction',
+                'getAccessToken': getToken,
+                'refreshToken': getToken,
+                };
+                var viewerElement = document.
+                    getElementById('viewer');
+                var viewer = new Autodesk.
+                    Viewing.Viewer3D(viewerElement, {});
+
+                Autodesk.Viewing.Initializer(options,function() {
+                viewer.initialize();
+                loadDocument(viewer, options.document);
+                });
+                }</code></pre>
+                </section>
+
+                <section class="fragment">
+                    <h3>token</h3>
+                        <pre><code data-trim class="javascript">function getToken() {
+                            return "GX6OONHlQ9qoVaCSmBqJvqPFUT5i";
+                            }</code></pre>
+                    <p class="fragment">You should write your own token service or use our NPM</p>
+                </section>
+
+
+                <section>
+                    <h3>loadDocument</h3>
+                    <pre><code data-trim class="hljs javascript">
+                    function loadDocument(viewer, documentId) {
+                    // Find the first 3d geometry and load that.
+                    Autodesk.Viewing.Document.load(documentId,
+                    function(doc) {
+                    var geometryItems = [];
+                    geometryItems = Autodesk.Viewing.Document.
+                    getSubItemsWithProperties(doc.getRootItem(), {
+                    'type' : 'geometry',
+                    'role' : '3d'
+                    }, true);
+
+                    if (geometryItems.length > 0) {
+                     viewer.load(doc.
+                        getViewablePath(geometryItems[0]));
+                    }
+                    }, function(errorMsg) {// onErrorCallback
+                    alert("Load Error: " + errorMsg);
+                    });
+                    }</code></pre>
+                </section>
+                <section>
+                    <h1>Resources</h1>
+                    <ul class="fragment">
+                        <li class="fragment"><a href="https://developer.autodesk.com/">Developer Portal</a></li>
+                        <li class="fragment"><a href="http://developer-autodesk.github.io/">Samples page on GitHub</a></li>
+                        <ul class="fragment">
+                            <li>quick start guides</li>
+                            <li>sample apps</li>
+                            <li>libraries</li>
+                        </ul>
+                        <li class="fragment">These slides are on <br><a href="http://jaimerosales.github.io/node-npm-presentation">http://jaimerosales.github.io/node-npm-presentation</a></li>
+                        <li class="fragment">Go to Next page for links</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Links during presentation</h3>
+                    <ul>
+                        <li><a href="http://trial.dotdotty.com/share?shareId=431c-bac8-eedb-e43d-fc79&iframe=true">Dotty IKEA Sample</a></li>
+                        <li><a href="http://lmv.rocks/">Polymer Sample LMV Rocks</a></li>
+                        <li><a href="http://pier9.herokuapp.com/">Pier 9 IoT sample</a> </li>
+                        <li><a href="https://bldng360.com/">BLDGN 360 Client Page</a></li>
+                        <li><a href="https://www.simulationhub.com/Viewer3D/">Simulation HUB Client Page</a></li>
+                        <li><a href="http://mongo.autodesk.io/">MondoDB LMV Sample</a> </li>
+                        <li><a href="https://github.com/Developer-Autodesk">Developer Github Repo</a></li>
+                        <li><a href="https://github.com/Developer-Autodesk/tutorial-getting.started-view.and.data">Tutorial How to get Started</a> </li>
+                        <li><a href="http://forums.autodesk.com/t5/view-and-data-api/bd-p/95">Forum API Community</a> </li>
+                        <li><a href="https://a360.autodesk.com/viewer"> Drag and Drop Model for viewing</a></li>
+                        <li><a href="https://github.com/leefsmp/view.and.data-boilerplate">BoilerPlate sample</a</li>
+                        <li><a href="http://adndevblog.typepad.com/cloud_and_mobile/2015/09/first-try-at-cloud9-viewdata-api-boilerplate.html">Instructions to Host in Cloud 9</a></li>
+                    </ul>
+
+                </section>
+                
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+                backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
